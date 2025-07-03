@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trang chủ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f5f9;
+    }
+
+    .header {
+      background-color: #1d3557;
+      color: white;
+      padding: 14px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    .menu {
+      background-color: #457b9d;
+      padding: 12px 0;
+      text-align: center;
+    }
+
+    .menu a {
+      margin: 0 18px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 16px;
+      padding: 6px 14px;
+      border-radius: 6px;
+      transition: background-color 0.3s;
+    }
+
+    .menu a:hover {
+      background-color: #1d3557;
+    }
+
+    .welcome {
+      text-align: center;
+      background: #e8f1fb;
+      padding: 20px 10px;
+      font-size: 18px;
+      color: #333;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 20px;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .box {
+      background: white;
+      border-radius: 8px;
+      padding: 20px;
+      flex: 1;
+      min-width: 280px;
+      max-width: 360px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    .box h3 {
+      margin-top: 0;
+      font-size: 18px;
+      border-bottom: 2px solid #5f5343;
+      padding-bottom: 6px;
+      margin-bottom: 16px;
+      color: #1d3557;
+    }
+
+    .item {
+      margin: 10px 0;
+      font-size: 14px;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 6px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .item span.date {
+      color: #999;
+      font-size: 12px;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 13px;
+      margin-top: 30px;
+      color: #666;
+      padding-bottom: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .menu a {
+        margin: 0 10px;
+        font-size: 14px;
+      }
+
+      .welcome {
+        font-size: 16px;
+      }
+
+      .container {
+        padding: 20px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo"><i class="fa-solid fa-house"></i> Trang Chủ</div>
+  </div>
+
+  <div class="menu">
+    <a href="Index.html"><i class="fa-solid fa-house"></i> Trang chủ</a>
+    <a href="Tracuudiem.html"><i class="fa-solid fa-chart-column"></i> Tra cứu điểm</a>
+    <a href="LichHoc.html"><i class="fa-solid fa-calendar-days"></i> Lịch học</a>
+    <a href="LichThi.html"><i class="fa-solid fa-clock"></i> Lịch thi</a>
+    <a href="TaiChinh.html"><i class="fa-solid fa-coins"></i> Tài chính</a>
+    <a href="PhucKhao.html"><i class="fa-solid fa-envelope-open-text"></i> Phúc khảo</a>
+  </div>
+
+  <div class="welcome">
+    🎓 Chào mừng bạn đến với Cổng thông tin Sinh viên Đại học Đại Nam!
+  </div>
+
+  <div class="container">
+    <div class="box">
+      <h3>📰 Tin tức mới nhất</h3>
+      <div class="item">Chưa có bản tin nào</div>
+    </div>
+    <div class="box">
+      <h3>📢 Thông báo</h3>
+      <div class="item">Nộp học phí kỳ III <span class="date">28/03/2025</span></div>
+      <div class="item">Phản hồi giảng viên kỳ II <span class="date">18/03/2025</span></div>
+      <div class="item">Hỗ trợ email Đại Nam <span class="date">15/03/2025</span></div>
+    </div>
+    <div class="box">
+      <h3>📄 Văn bản & Biểu mẫu</h3>
+      <div class="item">Quy định công tác sinh viên <span class="date">13/03/2025</span></div>
+      <div class="item">Quy chế đào tạo chính quy <span class="date">13/03/2025</span></div>
+      <div class="item">Hướng dẫn dùng cổng sinh viên <span class="date">30/08/2024</span></div>
+    </div>
+  </div>
+
+  <div class="footer-note">
+    Mọi thắc mắc vui lòng liên hệ Phòng Công tác sinh viên hoặc gửi email: <strong>hotrosinhvien@dainam.edu.vn</strong>
+  </div>
+
+</body>
+</html>
